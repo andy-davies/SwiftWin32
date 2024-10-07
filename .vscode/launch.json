@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:SwiftWin32}",
+            "name": "Debug swift32",
+            "program": "${workspaceFolder:SwiftWin32}/.build/debug/swift32",
+            "preLaunchTask": "swift: Build Debug swift32"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:SwiftWin32}",
+            "name": "Release swift32",
+            "program": "${workspaceFolder:SwiftWin32}/.build/release/swift32",
+            "preLaunchTask": "swift: Build Release swift32"
+        }
+    ]
+}
