@@ -29,7 +29,7 @@ if RegisterClassW(&wc) == 0 {
 }
 
 className.withUnsafeBufferPointer { classNamePtr in
-    let windowTitle: [WCHAR] = "Swift Window".utf16.map { WCHAR($0) } + [0]
+    let windowTitle: [WCHAR] = "SwiftWin32".utf16.map { WCHAR($0) } + [0]
     windowTitle.withUnsafeBufferPointer { windowTitlePtr in
         let hWnd = CreateWindowExW(
             0,
